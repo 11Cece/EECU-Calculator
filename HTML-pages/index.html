@@ -45,41 +45,45 @@
         </div>
     </header>
     <div id="main-body">
-        
-        <div id="dropdown-mennu">
+
+        <div id="dropdown-menu">
             <h2>Select Career</h2>
             <section id="dropdown">
-               
-               <select name="careers" id="careers">
-                <option id="placeholder">Select Career</option>
-               </select>
+
+                <select name="careers" id="careers">
+                    <option id="placeholder" class="SelectCareer">Select Career</option>
+                </select>
+            </section>       
+
+
+            <section class=input>
+                <label class="annualSalary">Annual Salary</label>
+                <input type=text id="annual" placeholder="$">
             </section>
-           
-        
-        <section class=input>
-            
-           <label>Annual Salary</label>
-            <input type=text id="annual" placeholder="$"> 
-            <h2>Monthly Income</h2>
-            <label>Salary Wages</label>
-            <input type=text id="annual" placeholder="$"> 
-            <label>Other Income</label>
-            <input type=text id="annual" placeholder="$"> 
-            <h2>taxes</h2>
-            <label>Medicare: 1.45%</label>
-            <input type=text id="annual" placeholder="$"> 
-            <label>Social security: 6.2%</label>
-            <input type=text id="annual" placeholder="$"> 
-            <label>Federal Income Tax</label>
-            <input type=text id="annual" placeholder="$"> 
-            <label>State Tax: 4%</label>
-            <input type=text id="annual" placeholder="$"> 
-            <button id="nextBtn" href="housing.html">Next</button>
-        </section>
-    </div>
-    <footer id="main-footer">
-        <img src="/images/eecu-logo.png">
-    </footer>
+                <h2 id = "monthlyHead">Monthly Income</h2>
+            <section id ="monthlyIncome">
+
+                <label>Salary Wages</label>
+                <input type=text id="annual" placeholder="$">
+                <label>Other Income</label>
+                <input type=text id="annual" placeholder="$">
+            </section>
+            <h2 id = "taxesHead">taxes</h2>
+            <section id="taxes">
+                <label>Medicare: 1.45%</label>
+                <input type=text id="annual" placeholder="$">
+                <label>Social security: 6.2%</label>
+                <input type=text id="annual" placeholder="$">
+                <label>Federal Income Tax</label>
+                <input type=text id="annual" placeholder="$">
+                <label>State Tax: 4%</label>
+                <input type=text id="annual" placeholder="$">
+                <button id="nextBtn" href="housing.html">Next</button>
+            </section>
+        </div>
+        <footer id="main-footer">
+            <img src="/images/eecu-logo.png">
+        </footer>
 </body>
 <script src="/script.js"></script>
 

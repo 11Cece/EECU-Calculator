@@ -1,9 +1,9 @@
 * {
     padding: 0;
     margin: 0;
-
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 32px;
 }
-
 :root {
     --back-btn: #3F8C5F;
     --next-Btn: #0A5BA8;
@@ -120,7 +120,7 @@ color:#ffffff;
     justify-content: center;
     align-items: center;
 }
-
+-
 #dropdown-menu {
     display: flex;
     flex-direction: row;
@@ -168,8 +168,45 @@ padding-bottom: 2rem;
 width: 8vw;
 border-radius: 20px;
 border-style: var(--next-Btn);
-
 color:#ffffff;
     background-color: var(--back-btn);
     color: white;
+}
+
+h2 {
+   font-size: 40px;
+}
+.annualSalary{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;  /*apply this code to the headers of each box for Salary and other cost boxes*/
+}
+#annual {
+    padding-left: 10px;
+}
+
+#monthlyIncome {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#taxes {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-items: center;
+}
+#taxesHead {
+    padding-left: 100px;
+}
+#monthlyHead {
+    padding-left: 100px;
+}
+#taxes p {
+    padding: 10px;
+}
+#monthlyIncome {
+    padding: 10px;
 }
