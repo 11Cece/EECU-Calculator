@@ -14,83 +14,85 @@
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
+    <div id="container">
 
-    <nav id="main-nav">
-        <img src="/images/eecu-logo.png">
-    </nav>
+        <nav id="main-nav">
+            <img src="/images/Nav.png">
+        </nav>
 
-    <header id="main-header">
-        <h1>
-            Monthly Budget Calculator
-        </h1>
+        <header id="main-header">
+            <h1>
+                Monthly Budget Calculator
+            </h1>
 
-        <div class="steps"> 
-            <!--Have to change this for each page, progress bar 
+            <div class="steps">
+                <!--Have to change this for each page, progress bar 
             is colored in html only here at step active-->
-            <div class="step active">
-                <div class="circle">1</div>
-            </div>
+                <div class="step active">
+                    <div class="circle">1</div>
+                </div>
 
-            <div class="step">
-                <div class="circle">2</div>
-            </div>
+                <div class="step">
+                    <div class="circle">2</div>
+                </div>
 
-            <div class="step">
-                <div class="circle">3</div>
-            </div>
+                <div class="step">
+                    <div class="circle">3</div>
+                </div>
 
-            <div class="step">
-                <div class="circle">4</div>
-            </div>
+                <div class="step">
+                    <div class="circle">4</div>
+                </div>
 
-            <div class="step">
-                <div class="circle">5</div>
+                <div class="step">
+                    <div class="circle">5</div>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <div id="main-body">
+        <div id="main-body">
 
-        <section id="dropdown-menu">
-            <div class="careerCont">
-            <h2 class="title">Select Career</h2>
-            
-                <select name="careers" id="careers">
-                    <option id="placeholder" class="SelectCareer">Select Career</option>
-                </select>      
-            </div>
-            <h3>Career: <span id="career"></span></h3>
-            <section id ="monthlyIncome">
+            <section id="dropdown-menu">
+                <div class="careerCont">
+                    <h2 class="title">Select Career</h2>
+
+                    <select name="careers" id="careers">
+                        <option id="placeholder" class="SelectCareer">Select Career</option>
+                    </select>
+                </div>
+                <h3>Career: <span id="career"></span></h3>
+                <section id="monthlyIncome">
                     <h2 id="monthlyHead">Monthly Income</h2>
-                        <label>Salary Wages</label>
-                        <span id="salary">$</span>
-                        <label>Other Income</label>
+                    <label>Salary Wages</label>
+                    <span id="salary">$</span>
+                    <label>Other Income</label>
                     <input type="number" class="annual" placeholder="$">
-            </section>
+                </section>
 
-            <section id="taxes">    
-                <h2 id="taxesHead">Taxes</h2>
+                <section id="taxes">
+                    <h2 id="taxesHead">Taxes</h2>
                     <label>Medicare: 1.45%</label>
                     <span id="medicare">$</span>
-                    
+
                     <label>Social security: 6.2%</label>
                     <span id="SS">$</span>
-                    
+
                     <label>Federal Income Tax</label>
                     <span id="federal">$</span>
 
                     <label>State Tax: 4%</label>
                     <span id="state">$</span>
 
-                <a href="housing.html" id="nextBtn">Next</a>
+                    <a href="housing.html" id="nextBtn">Next</a>
+                </section>
             </section>
-        </section>
 
-        <footer id="main-footer">
-            <img src="/images/eecu-logo.png">
-        </footer>
-
-
+            <footer id="main-footer">
+                <img src="/images/Footer.png">
+            </footer>
+        </div>
+    </div>
 </body>
 <script src="/script.js"></script>
+
 </html>

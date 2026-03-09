@@ -23,16 +23,26 @@ body {
 
 #main-nav {
     display: flex;
-    justify-content: flex-start;
+    height: 100%;
     align-items: center;
-    background-color: #0A5BA8;
-    height: 10vh;
+
 }
 
 .nav-img {
     height: 6vh;
-    width: auto;
+    width: 100%; ;
     margin-left: 1vh;
+}
+#main-nav {
+    display: flex;
+    align-items: center;
+    width:  100%;
+}
+#main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #main-header {
@@ -203,4 +213,11 @@ footer {
     justify-content: flex-start;
     background-color:  #0A5BA8;
     height: max-content;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
