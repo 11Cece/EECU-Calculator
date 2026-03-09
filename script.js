@@ -67,7 +67,7 @@ function calculateTaxes(choice) {
 
     let federalTaxAmount = 0;
     if (salary <= 50400) {
-        let tenPercent = (12400 * 0.10;)
+        let tenPercent = (12400 * 0.10);
         let twelvePercent = (50400 * 0.12);
         let twentyTwoPercent = (salary - 50400) * 0.22;
         federalTaxAmount = tenPercent + twelvePercent + twentyTwoPercent;
