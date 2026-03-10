@@ -82,6 +82,17 @@ function calculateTaxes(choice) {
     } //should be federal tax rate
 }
 
+    
+    document.getElementById("tax").addEventListener("click", () => {
+        let salary = document.getElementById("salary").value;
+        salary = salary.replace("$", "");
+        console.log(salary);
+        const other = document.getElementById("annual"); 
+        taxing = 0;
+    });
+        
+
+
 loadChoice();
 displayCareerInfo(choice);
 getCareers();
