@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EECU Calculator</title>
-    <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-1.css">
 
 </head>
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
-    <div id="container">
-
-        <nav id="main-nav">
-            <img src="/images/Nav.png">
-        </nav>
-
         <header id="main-header">
+            <nav class="nav-bar">
+                <figure class="EECU-Logo">
+                    <img src="img/image 2.svg" alt="EECU Logo">
+                </figure>
+                <div class="links">
+                    <a href="#">Savings & Checking</a>
+                    <a href="#">Loans & Credit Cards</a>
+                    <a href="#">Online & Mobile</a>
+                    <a href="#">Insure & Invest</a>
+                    <a href="#">News & Resources</a>
+                    <a href="#">Money 101</a>
+                    <div class="Login-btn">
+                        <a href=#">Login</a>
+                    </div>
+                </div>
+                
+            </nav>
+            
             <h1>
                 Monthly Budget Calculator
             </h1>
@@ -50,50 +62,81 @@
             </div>
         </header>
 
-        <div id="main-body">
-
+        <main id="main-body">
             <section id="dropdown-menu">
                 <div class="careerCont">
-                    <h2 class="title">Select Career</h2>
+                    <h2 class="title">Select Career:</h2>
 
                     <select name="careers" id="careers">
                         <option id="placeholder" class="SelectCareer">Select Career</option>
                     </select>
                 </div>
                 <h3>Career: <span id="career"></span></h3>
+
                 <section id="monthlyIncome">
                     <h2 id="monthlyHead">Monthly Income</h2>
-                    <label>Salary Wages</label>
-                    <span id="salary">$</span>
-                    <label>Other Income</label>
-                    <input type="number" id="annual" placeholder="$">
+                    <div id="MonthlyIncome-List">
+                        <div>
+                          <label>Salary Wages</label>
+                          <input type="number" id="salary" placeholder="$"></input>
+                        </div>
+                        <div class="Other Income">
+                          <label>Other Income</label>
+                          <input type="number" id="annual" placeholder="$">
+                        </div>  
+                    </div>                  
                 </section>
 
                 <button id="tax"></button>
 
                 <section id="taxes">
                     <h2 id="taxesHead">Taxes</h2>
-                    <label>Medicare: 1.45%</label>
-                    <span id="medicare">$</span>
-
-                    <label>Social security: 6.2%</label>
-                    <span id="SS">$</span>
-
-                    <label>Federal Income Tax</label>
-                    <span id="federal">$</span>
-
-                    <label>State Tax: 4%</label>
-                    <span id="state">$</span>
-
-                    <a href="housing.html" id="nextBtn">Next</a>
+                    <div id="taxes-List">
+                        <div>
+                            <label>Medicare: 1.45%</label>
+                            <span id="medicare">$</span>
+                        </div>
+                        <div>
+                            <label>Social security: 6.2%</label>
+                            <span id="SS">$</span>
+                        </div>
+                        <div>
+                            <label>Federal Income Tax</label>
+                            <span id="federal">$</span>
+                        </div>
+                        <div>
+                            <label>State Tax: 4%</label>
+                            <span id="state">$</span>
+                        </div>
+                    </div>
                 </section>
             </section>
 
-            <footer id="main-footer">
-                <img src="/images/Footer.png">
-            </footer>
-        </div>
-    </div>
+            <div class="nextBtn">
+                <a href="housing.html" id="nextBtn">Next</a>
+            </div>
+        </main>
+
+        <footer id="main-footer">
+            <div class="List-1">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <li><a href="#">How we Pay your checking Account <br>Transactions</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <figure class="Logo">
+                <img src="/img/image 2.svg" alt="Logo">
+            </figure>
+            <div class="List-2">
+                <ul>
+                    <li><a href="#">Protect your home from foreclosure</a></li>
+                    <li><a href="#">website Accessibility</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </footer>
 </body>
 <script src="/script.js"></script>
 
