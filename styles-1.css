@@ -1,0 +1,230 @@
+:root {
+    --main-color: #0A5BA8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh Sans;
+}
+/*nav-bar*/
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+   justify-content: space-between;
+    align-items: center;
+}
+.EECU-Logo {
+    margin-right: 1vh;
+}
+.EECU-Logo img {
+    width: 25vh;
+}
+.links {
+ display: flex;
+ justify-content: space-evenly;
+ gap: 1vh;
+ margin-right: 3vh;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 1vh;
+}
+.links a:hover {
+    text-decoration: underline;
+    background-color: #013d766a;
+}
+.Login-btn {
+    align-content: center;
+    margin-left: 1vh;
+}
+.Login-btn a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 1vh;
+}
+/*Main-content*/
+h1 {
+    background-color: white;
+    box-shadow: 0px 4px 4px #00000040;
+    margin-bottom: vh;
+    padding: 2vh;
+}
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+/* Line */
+.steps::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    z-index: 3;
+}
+
+/* Circles */
+.circle {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Active Step */
+.step.active .circle {
+    background: #1e73ff;
+    border-color: #1e73ff;
+    color: white;
+}
+
+.careerCont {
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    margin-top: 10vh;
+    align-content: center;
+}
+.careerCont > select {
+    height: 3.6vh;
+    align-self: center;
+    border-radius: 0.8vh;
+    border: 1px solid lightgray;
+}
+#monthlyIncome {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6E6F6;
+    width: 95%;
+    padding: 1vh;
+    margin-left: 5vh;
+}
+#monthlyIncome > h2 {
+    font-size: 32px;
+    margin-left: 2vh;
+}
+#MonthlyIncome-List {
+    margin-top: 2vh;
+    width: 50%;
+    margin-left: 10vh;
+}
+#MonthlyIncome-List > div  {
+    margin-bottom: 15vh;
+}
+#MonthlyIncome-List > div > label {
+    padding-right: 5vh;
+    font-size: 20px;
+}
+#MonthlyIncome-List > div > input {
+    border: 2px solid black;
+    padding: 2vh;
+    border-radius: 2vh;
+    width: 30%;
+    height: 4.3vh;
+}
+#taxes {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6E6F6;
+    width: 95%;
+    padding: 1vh;
+    margin-left: 5vh;
+}
+#taxes > h2 {
+    font-size: 32px;
+    margin-left: 2vh;
+}
+#taxes-List {
+    margin-top: 2vh;
+    width: 50%;
+    margin-left: 10vh; 
+}
+#taxes-List > div {
+    margin-bottom: 10vh;
+}
+#taxes-List > div > label {
+    padding-right: 5vh;
+    font-size: 20px;
+}
+#taxes-List > div > span {
+    background-color: white;
+    border: 2px solid black;
+    padding: 2vh;
+    border-radius: 2vh;
+    height: 4.3vh;;
+}
+#nextBtn  {
+    color: white;
+    text-decoration: none;
+    background-color: #0A5BA8;
+    padding: 2vh;
+    border-radius: 0.8vh;
+}
+.nextBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.nextBtn > a {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+/*footer*/
+#main-footer {
+    background-color: var(--main-color);
+    margin-top: 10vh;
+    padding: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+.List-1 > ul > li {
+    list-style: none;
+    margin-bottom: 2vh;
+}
+.List-1 > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.List-1 > ul > li > a:hover {
+    text-decoration: underline;  
+}
+.List-2 > ul > li {
+    list-style: none;
+    margin-bottom: 2vh;
+}
+.List-2 > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.List-2 > ul > li > a:hover {
+    text-decoration: underline;  
+}
