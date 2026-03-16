@@ -14,8 +14,6 @@
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
-    <nav id="main-nav">
-        <img class="nav-img" src="images/eecu-logo.png">
     <header id="main-header">
         <nav class="nav-bar">
             <figure class="EECU-Logo">
@@ -58,6 +56,10 @@
             <div class="step">
                 <div class="circle">5</div>
             </div>
+
+            <div class="step">
+                <div class="circle">6</div>
+            </div>
         </div>
     </header>
 
@@ -84,8 +86,10 @@
             </form>
         </section>
     </main>
-    <a id="backBtn" href="index.html">Back</a>
-    <a id="nextBtn" href="lifestyle.html">Next</a><!--make sure to move this when you create another section to add it inside-->
+    <div class="button-container">
+        <a id="backBtn" href="index.html">Back</a>
+        <a id="nextBtn" href="lifestyle.html">Next</a>
+    </div><!--make sure to move this when you create another section to add it inside-->
     
     <footer id="main-footer">
         <div class="List-1">
@@ -97,7 +101,7 @@
             </ul>
         </div>
         <figure class="Logo">
-            <img src="/img/image 2.svg" alt="Logo">
+            <img src="img/image 2.svg" alt="Logo">
         </figure>
         <div class="List-2">
             <ul>
@@ -108,4 +112,5 @@
         </div>
     </footer>
     </body>
+    <script src="script.js"></script>
     </html>

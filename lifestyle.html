@@ -14,7 +14,7 @@
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
-    <nav id="main-nav">
+    <header id="main-header">
         <nav class="nav-bar">
             <figure class="EECU-Logo">
                 <img src="img/image 2.svg" alt="EECU Logo">
@@ -32,10 +32,11 @@
             </div>
             
         </nav>
-    <header id="main-header">
+        
         <h1>
             Monthly Budget Calculator
         </h1>
+
         <div class="steps">
             <div class="step active">
                 <div class="circle">1</div>
@@ -56,27 +57,47 @@
             <div class="step">
                 <div class="circle">5</div>
             </div>
+
+            <div class="step">
+                <div class="circle">6</div>
+            </div>
         </div>
     </header>
-    <form>
-            <label for="dining">Dining Out</label>
+    <h2 id="lifestyle-h2">Lifestyle Expenses</h2>
+    <main id="lifestyle">
+        <section id="input">
+            <form>
+                <label for="dining">Dining Out</label>
                 <input name="dining" type="text" placeholder="$" class="expense">
                 <label for="entertainment">Entertainment</label>
                 <input name="entertainment" type="text" placeholder="$" class="expense">
-                <label for="selfcare">Self-care</label>
+                <label for="selfcare">Gym</label>
                 <input name="selfcare" type="text" placeholder="$" class="expense">
-                <label for="food">Foos/Groceries</label>
+                <label for="food">Streaming</label>
                 <input name="food" type="text" placeholder="$" class="expense">
                 <label for="Pet">Pet Payment</label>
                 <input name="Pet" type="text" placeholder="$" class="expense">
                 <label for="car">Car Payment</label>
                 <input name="car" type="text" placeholder="$" class="expense">
-    </form>
+            </form>
+        </section>
+    </main>
 
-    <a id="nextBtn" href="edu.html">Next</button><!--make sure to move this when you create another section to add it inside-->
+    <div class="button-container">
+        <a id="backBtn" href="housing.html">Back</a>
+        <a id="nextBtn" href="essentials.html">Next</a>
+    </div><!--make sure to move this when you create another section to add it inside-->
     <footer id="main-footer">
+        <div class="List-1">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Security Center</a></li>
+                <li><a href="#">How we Pay your checking Account <br>Transactions</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
         <figure class="Logo">
-            <img src="/img/image 2.svg" alt="Logo">
+            <img src="img/image 2.svg" alt="Logo">
         </figure>
         <div class="List-2">
             <ul>
@@ -86,3 +107,6 @@
             </ul>
         </div>
     </footer>
+</body>
+<script src="script.js"></script>
+</html>

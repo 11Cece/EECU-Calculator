@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EECU Calculator</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles-1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
@@ -14,10 +14,25 @@
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
-    <nav id="main-nav">
-        <img src="/images/eecu-logo.png">
-    </nav>
     <header id="main-header">
+         <nav class="nav-bar">
+                <figure class="EECU-Logo">
+                    <img src="img/image 2.svg" alt="EECU Logo">
+                </figure>
+                <div class="links">
+                    <a href="#">Savings & Checking</a>
+                    <a href="#">Loans & Credit Cards</a>
+                    <a href="#">Online & Mobile</a>
+                    <a href="#">Insure & Invest</a>
+                    <a href="#">News & Resources</a>
+                    <a href="#">Money 101</a>
+                    <div class="Login-btn">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+                
+            </nav>
+        
         <h1>
             Monthly Budget Calculator
         </h1>
@@ -38,22 +53,54 @@
                 <div class="circle">4</div>
             </div>
 
-            <div class="step">
+            <div class="step active">
                 <div class="circle">5</div>
+            </div>
+
+            <div class="step">
+                <div class="circle">6</div>
             </div>
         </div>
     </header>
-    <form>
+        <h2 id="education-h2">Educational Expenses</h2>
+    <main id="education">
+        <section id="input">
+            <form>
             <label for="studentLoans">Mortgage</label>
             <input type="text" placeholder="$" name="studentLoans" class="expense">
             <label for="supplies">School Supplies</label>
             <input type="text" placeholder="$" name="supplies" class="expense">
             <label for="tuition">College Tuition</label>
             <input type="text" placeholder="$" name="tuition" class="expense">
-
-    </form>
-    <a id="backBtn" href="lifestyle.html">Back</a>
+        </form>
+        </section>
+    </main>
+    <div class="button-container">
+    <a id="backBtn" href="essentials.html">Back</a>
     <a id="nextBtn" href="futureproof.html">Next</a><!--make sure to move this when you create another section to add it inside-->
+    </div>
+
     <footer id="main-footer">
-        <img src="/images/eecu-logo.png">
-    </footer>
+               <div class="List-1">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <li><a href="#">How we Pay your checking Account <br>Transactions</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <figure class="Logo">
+                <img src="img/image 2.svg" alt="Logo">
+            </figure>
+            <div class="List-2">
+                <ul>
+                    <li><a href="#">Protect your home from foreclosure</a></li>
+                    <li><a href="#">website Accessibility</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

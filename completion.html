@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EECU Calculator</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles-1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
@@ -14,10 +14,25 @@
 <!--Giving everything an ID b/c of several HTML pages-->
 
 <body>
-    <nav id="main-nav">
-        <img src="/images/eecu-logo.png">
-    </nav>
     <header id="main-header">
+         <nav class="nav-bar">
+                <figure class="EECU-Logo">
+                    <img src="img/image 2.svg" alt="EECU Logo">
+                </figure>
+                <div class="links">
+                    <a href="#">Savings & Checking</a>
+                    <a href="#">Loans & Credit Cards</a>
+                    <a href="#">Online & Mobile</a>
+                    <a href="#">Insure & Invest</a>
+                    <a href="#">News & Resources</a>
+                    <a href="#">Money 101</a>
+                    <div class="Login-btn">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+                
+            </nav>
+        
         <h1>
             Monthly Budget Calculator
         </h1>
@@ -41,16 +56,82 @@
             <div class="step active">
                 <div class="circle">5</div>
             </div>
+
+            <div class="step active">
+                <div class="circle">6</div>
+            </div>
         </div>
     </header>
     <div id="pieChart">
         <!-- pie chart in js goes here  -->
+         <canvas id="donutChart"></canvas>
     </div>
     <section class="feedback">
         <h3>Our Feedback</h3>
         <!-- feedback will change based off of criteria in js  -->
+             <a id="resetBtn" href="index.html">Want to try again?</a> <!--make sure to move this when you create another section to add it inside-->
     </section>
-    <a id="resetBtn" href="index.html">Want to try again?</a> <!--make sure to move this when you create another section to add it inside-->
     <footer id="main-footer">
-        <img src="/images/eecu-logo.png">
-    </footer>
+               <div class="List-1">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security Center</a></li>
+                    <li><a href="#">How we Pay your checking Account <br>Transactions</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <figure class="Logo">
+                <img src="/img/image 2.svg" alt="Logo">
+            </figure>
+            <div class="List-2">
+                <ul>
+                    <li><a href="#">Protect your home from foreclosure</a></li>
+                    <li><a href="#">website Accessibility</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('donutChart').getContext('2d');
+        const donutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Housing', 'Lifestyle', 'Essentials', 'Education', 'Future-Proofing'],
+                datasets: [{
+                    label: 'Budget Distribution',
+                    data: [20, 20, 20, 20, 20], // Example data, replace with actual values
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Your Budget Distribution'
+                    }
+                }
+            },
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
