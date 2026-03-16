@@ -56,14 +56,16 @@ function loadChoice() {
 }
 
 function displayCareerInfo(choice) {
-    careerInfo.innerHTML = `Occupation: ${choice.Occupation}<br>Salary: $${choice.Salary}`;
+    careerInfo.innerHTML = `Occupation: ${choice.Occupation}<br>Salary: $${choice.Salary}`; 
+    document.getElementById("salary").value = choice.Salary;
+    calculateTaxes(choice);
 }
 
 function calculateTaxes(choice) {
     const salary = choice.Salary || 0;
-    medicare.innerHTML = `Medicare: $${(salary * 0.0145).toFixed(2)}`;
-    socialSecurity.innerHTML = `Social Security: $${(salary * 0.062).toFixed(2)}`;
-    stateTax.innerHTML = `State Tax: $${(salary * 0.04).toFixed(2)}`;
+    medicare.innerHTML = `$${(salary * 0.0145).toFixed(2)}`;
+    socialSecurity.innerHTML = `$${(salary * 0.062).toFixed(2)}`;
+    stateTax.innerHTML = `$${(salary * 0.04).toFixed(2)}`;
 
     let federalTaxAmount = 0;
     if (salary <= 50400) {
@@ -79,7 +81,16 @@ function calculateTaxes(choice) {
     }
     else {
         federalTaxAmount = salary * 0.10;
-    } //should be federal tax rate
+    } federalTax.innerHTML = `$${federalTaxAmount.toFixed(2)}`;
+
+    localStorage.setItem("calculatorData", JSON.stringify({
+        medicare: (salary * 0.0145).toFixed(2),
+        socialSecurity: (salary * 0.062).toFixed(2),
+        stateTax: (salary * 0.04).toFixed(2),
+        federalTax: federalTaxAmount.toFixed(2),
+        netIncome: (salary - (salary * 0.0145) - (salary * 0.062) - (salary * 0.04) - federalTaxAmount).toFixed(2)
+
+    }));
 }
 
     
