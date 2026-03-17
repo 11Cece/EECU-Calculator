@@ -68,7 +68,7 @@
     </div>
     <section class="feedback">
         <h3>Our Feedback</h3>
-        <div id="feedback-message"></div>
+        <div id="feedback-message"  ></div>
         <!-- feedback will change based off of criteria in js  -->
              <a id="resetBtn" href="index.html">Want to try again?</a> <!--make sure to move this when you create another section to add it inside-->
     </section>
@@ -93,46 +93,6 @@
             </div>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('donutChart').getContext('2d');
-        const donutChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Housing', 'Lifestyle', 'Essentials', 'Education', 'Future-Proofing'],
-                datasets: [{
-                    label: 'Budget Distribution',
-                    data: [20, 20, 20, 20, 20], // Example data, replace with actual values
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Your Budget Distribution'
-                    }
-                }
-            },
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>
