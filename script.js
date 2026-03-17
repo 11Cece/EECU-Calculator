@@ -6,7 +6,8 @@ const stateTax = document.getElementById("state");
 const careerInfo = document.getElementById("career");
 
 // Detect which page we are on
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const rawPage = window.location.pathname.split("/").pop();
+const currentPage = rawPage.includes(".") ? rawPage : (rawPage ? rawPage + ".html" : "index.html");
 
 // ---- Careers & Taxes (index.html) ----
 
